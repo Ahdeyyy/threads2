@@ -35,11 +35,14 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@lucia-auth/adapter-sqlite": "^1.1.1",
 		"better-sqlite3": "^8.4.0",
 		"class-variance-authority": "^0.6.1",
 		"clsx": "^1.2.1",
 		"drizzle-orm": "^0.27.0",
+		"lucia-auth": "^1.8.0",
 		"lucide-svelte": "^0.259.0",
+		"radix-svelte": "^0.8.0",
 		"tailwind-merge": "^1.13.2",
 		"tailwindcss-animate": "^1.0.6"
 	}

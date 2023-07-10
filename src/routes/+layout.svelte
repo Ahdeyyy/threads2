@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Separator } from '$components/ui/separator';
 	import '../app.postcss';
 	import { HomeIcon, UserIcon, SearchIcon, BookmarkIcon } from 'lucide-svelte';
 
@@ -17,7 +18,7 @@
 		<ul>
 			{#each nav_links as item}
 				<li class="w-fit mb-2 last:mb-0">
-					<Button href={item.href} class="px-7 py-4 w-full rounded-lg" variant="ghost">
+					<Button href={item.href} class="px-7 py-4 w-full rounded-3xl" variant="ghost">
 						{#if item.icon}
 							<svelte:component this={item.icon} class="mr-2 h-5 w-5" />
 						{/if}
@@ -27,10 +28,11 @@
 			{/each}
 
 			<li>
-				<Button href="/signup" class="px-14 py-4">sign up</Button>
+				<Button href="/signup" class="px-14 py-4 rounded-3xl">sign up</Button>
 			</li>
 		</ul>
 	</nav>
+	<Separator class="h-screen " orientation="vertical" />
 	<main class="col-span-8">
 		<slot />
 	</main>
