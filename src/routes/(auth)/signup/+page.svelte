@@ -38,8 +38,9 @@
 				<Input id="password" name="password" type="password" />
 			</div>
 		</CardContent>
-		<CardFooter>
+		<CardFooter class="grid grid-flow-row gap-2" >
 			<Button class="w-full py-4 px-14 rounded-3xl">sign up</Button>
+			<p class="py-4 px-14 text-center" >Already have an account? <Button href="/signin" variant="link" >sign in</Button></p>
 		</CardFooter>
 	</Card>
 </form>
